@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import Header from "../components/Header";
 
 export default function SingleMovie() {
   const [imdb, setImdb] = useState("");
+  // eslint-disable-next-line no-unused-vars
   const [tmdb, setTmdb] = useState("");
   const [moviename, setMoviename] = useState("");
 
@@ -31,6 +33,7 @@ export default function SingleMovie() {
   console.log(imdb);
   return (
     <div>
+      <Header />
       <iframe
         width={"100%"}
         height={"800px"}
